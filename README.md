@@ -1,5 +1,8 @@
 # Test Reference Years (TRY) for 15 typical regions in germany with special regards on realisitc radiation data on a 1min timescale
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5105765.svg)](https://doi.org/10.5281/zenodo.5105765)
+
+
 **Summary:**
 
 The data set contains the updated test reference years (TRY) of the German Weather Service (DWD). By subdividing into 15 TRY regions, each postcode area can be assigned a representative weather data set. It should be emphasized that in addition to a mean, current test reference year for a region, there is also a year with extreme summer and extreme winter weather. To take climate change into account, there is then a time series for the year 2045 for each test reference year based on the IPCC climate models. This means that a total of 90 weather data sets are available with a one-hour time resolution.
@@ -10,12 +13,20 @@ In order to use the data in simulations with a temporal resolution of 1min or 15
 - Raw data from DWD: https://kunden.dwd.de/obt/ -> `1_raw-data`
 - Synthetic 1min radiation data: http://pvmodelling.org/ -> `2_synthetic-radiation`
 
-**How to create the final dataset:**
+**How to use or recreate the final dataset:**
 1. clone/download this repository
-2. unzip the files in the folders `1_raw-data` and `2_synthetic-radiation`
-3. run the `process-data.py`
-Final datasets are then located in -> `3_processed-data`
+2. unzip the files from the data.zip file, see https://github.com/RE-Lab-Projects/TRY_DE_2015_2045/releases/download/v1.4.0/data.zip
+3. Use or recreate the final dataset
 
+a) use: Final datasets are then located in -> `3_processed-data`
+
+b) recreate: run the `process-data.py`
+
+**Licenses**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) for the code
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) for the dataset
 
 **Test reference stations / regions**
 
