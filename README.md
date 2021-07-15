@@ -1,14 +1,14 @@
 # Test Reference Years (TRY) for 15 typical regions in germany with special regards on realisitc radiation data on a 1min timescale
 
-**Sources:**
-- Raw data from DWD: https://kunden.dwd.de/obt/ -> `1_raw-data`
-- Synthetic 1min radiation data: http://pvmodelling.org/ -> `2_synthetic-radiation`
-
 **Summary:**
 
 The data set contains the updated test reference years (TRY) of the German Weather Service (DWD). By subdividing into 15 TRY regions, each postcode area can be assigned a representative weather data set. It should be emphasized that in addition to a mean, current test reference year for a region, there is also a year with extreme summer and extreme winter weather. To take climate change into account, there is then a time series for the year 2045 for each test reference year based on the IPCC climate models. This means that a total of 90 weather data sets are available with a one-hour time resolution.
 
 In order to use the data in simulations with a temporal resolution of 1min or 15min, the data set was extended by linear interpolation. While this approach is justifiable for air pressure and temperature, for example, it does not depict high fluctuations in solar radiation. Therefore, based on the one-minute open data measurement data set of the Baseline Surface Radiation Network, with an algorithm by Hofmann et. al. the time series of global radiation are newly generated for all test reference years. Another algorithm by Hofmann et. al. was used to calculate the corresponding diffuse radiation times series.
+
+**Sources:**
+- Raw data from DWD: https://kunden.dwd.de/obt/ -> `1_raw-data`
+- Synthetic 1min radiation data: http://pvmodelling.org/ -> `2_synthetic-radiation`
 
 **How to create the final dataset:**
 1. clone/download this repository
