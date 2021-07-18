@@ -1,8 +1,7 @@
 # Test Reference Years (TRY) for 15 typical regions in germany with special regards on realisitc radiation data on a 1min timescale
 
-**Sources:**
-- Raw data from DWD: https://kunden.dwd.de/obt/ -> `1_raw-data`
-- Synthetic 1min radiation data: http://pvmodelling.org/ -> `2_synthetic-radiation`
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5105765.svg)](https://doi.org/10.5281/zenodo.5105765)
+
 
 **Summary:**
 
@@ -10,12 +9,24 @@ The data set contains the updated test reference years (TRY) of the German Weath
 
 In order to use the data in simulations with a temporal resolution of 1min or 15min, the data set was extended by linear interpolation. While this approach is justifiable for air pressure and temperature, for example, it does not depict high fluctuations in solar radiation. Therefore, based on the one-minute open data measurement data set of the Baseline Surface Radiation Network, with an algorithm by Hofmann et. al. the time series of global radiation are newly generated for all test reference years. Another algorithm by Hofmann et. al. was used to calculate the corresponding diffuse radiation times series.
 
-**How to create the final dataset:**
-1. clone/download this repository
-2. unzip the files in the folders `1_raw-data` and `2_synthetic-radiation`
-3. run the `process-data.py`
-Final datasets are then located in -> `3_processed-data`
+**Sources:**
+- Raw data from DWD: https://kunden.dwd.de/obt/ -> `1_raw-data`
+- Synthetic 1min radiation data: http://pvmodelling.org/ -> `2_synthetic-radiation`
 
+**How to use or recreate the final dataset:**
+1. clone/download this repository
+2. unzip the files from the data.zip file, see https://github.com/RE-Lab-Projects/TRY_DE_2015_2045/releases/download/v1.4.0/data.zip
+3. Use or recreate the final dataset
+
+a) use: Final datasets are then located in -> `3_processed-data`
+
+b) recreate: run the `process-data.py`
+
+**Licenses**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) for the code
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) for the dataset
 
 **Test reference stations / regions**
 
